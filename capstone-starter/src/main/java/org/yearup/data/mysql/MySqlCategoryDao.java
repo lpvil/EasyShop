@@ -20,6 +20,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         super(dataSource);
     }
 
+    // get all categories
     @Override
     public List<Category> getAllCategories()
     {
@@ -35,10 +36,10 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         } catch (SQLException e){
             e.printStackTrace();
         }
-        // get all categories
+
         return categories;
     }
-
+    // get category by id
     @Override
     public Category getById(int categoryId)
     {
@@ -53,27 +54,27 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         } catch (SQLException e){
             e.printStackTrace();
         }
-        // get category by id
         return null;
     }
-
+    // create a new category
     @Override
     public Category create(Category category)
     {
         try(Connection connection = getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO categories(name,description)", PreparedStatement.RETURN_GENERATED_KEYS);
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO categories(name,description) VALUES (?,?)", PreparedStatement.RETURN_GENERATED_KEYS);
         ){
             preparedStatement.setString(1,category.getName());
             preparedStatement.setString(2,category.getDescription());
             int rs = preparedStatement.executeUpdate();
             ResultSet keys = preparedStatement.getGeneratedKeys();
+            keys.next();
             category.setCategoryId(keys.getInt(1));
         } catch (SQLException e){
             e.printStackTrace();}
-        // create a new category
+
         return category;
     }
-
+    // update category
     @Override
     public void update(int categoryId, Category category)
     {
@@ -86,10 +87,8 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
 
         } catch (SQLException e){
             e.printStackTrace();}
-
-        // update category
     }
-
+    // delete category
     @Override
     public void delete(int categoryId)
     {
@@ -99,7 +98,6 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
             int rs = preparedStatement.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();}
-        // delete category
     }
 
     private Category mapRow(ResultSet row) throws SQLException
