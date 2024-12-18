@@ -95,7 +95,9 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         try(Connection connection = getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM categories WHERE category_id = ?");
         ){
-            int rs = preparedStatement.executeUpdate();
+            //
+            preparedStatement.setInt(1,categoryId);
+            preparedStatement.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();}
     }
