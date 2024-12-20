@@ -34,11 +34,14 @@ Home Screen
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/QcXRSbP/Screenshot-2024-12-19-205459.png" alt="Screenshot-2024-12-19-205459" border="0"></a><br>
 <br>
 >Updating User Information
+optional feature
 ***
 <a href="https://ibb.co/gV0Lsfr"><img src="https://i.ibb.co/8cyLFfm/Screenshot-2024-12-19-205506.png" alt="Screenshot-2024-12-19-205506" border="0"><br>
-Principal- authenticates user/represents currently logged in user
-Var- Detects dataype of variable
 <br>
+Principal authenticates user/represents currently logged in user<br>
+Var Detects dataype of variable
+<br>
+***
 
 
 
