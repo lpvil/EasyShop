@@ -36,6 +36,10 @@ Home Screen
 >Updating User Information
 ***
 <a href="https://ibb.co/gV0Lsfr"><img src="https://i.ibb.co/8cyLFfm/Screenshot-2024-12-19-205506.png" alt="Screenshot-2024-12-19-205506" border="0"><br>
+Principal- authenticates user/represents currently logged in user
+Var- Detects dataype of variable
+<br>
+
 
 
     public Profile getById(Principal principal) {
