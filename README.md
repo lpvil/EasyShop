@@ -37,10 +37,9 @@ Home Screen
 optional feature
 ***
 <a href="https://ibb.co/gV0Lsfr"><img src="https://i.ibb.co/8cyLFfm/Screenshot-2024-12-19-205506.png" alt="Screenshot-2024-12-19-205506" border="0"><br>
-'
 <br>
-Principal authenticates user/represents currently logged in user<br>
-Var Detects dataype of variable
+###Principal authenticates user/represents currently logged in user<br>
+###Var Detects dataype of variable
 <br>
 ***
 
