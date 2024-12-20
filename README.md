@@ -13,7 +13,7 @@ This application was created with the help of SpringBoot and applied what we lea
 
 -----------
 <br>
->Home Screen <br>
+Home Screen <br>
 ***
 <br>
 <a href="https://ibb.co/dpjsdfn"><img src="https://i.ibb.co/KsbcM5C/Screenshot-2024-12-19-205433.png" alt="Screenshot-2024-12-19-205433" border="0"></a>
