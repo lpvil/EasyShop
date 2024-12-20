@@ -13,7 +13,6 @@ This application was created with the help of SpringBoot and applied what we lea
 
 -----------
 <br>
-<br>
 >Home Screen <br>
 ***
 <br>
@@ -24,15 +23,15 @@ This application was created with the help of SpringBoot and applied what we lea
  ***
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/H42SQq9/Screenshot-2024-12-19-205402.png" alt="Screenshot-2024-12-19-205402" border="0"></a><br>
 <br>
-Filtering by Color<br>
+>Filtering by Color<br>
 ***
 <a href="https://ibb.co/n8xG74F"><img src="https://i.ibb.co/mFfj9d3/Screenshot-2024-12-19-205416.png" alt="Screenshot-2024-12-19-205416" border="0"></a><br>
 <br>
-Loging in
+>Loging in
 ***
 <a href="https://ibb.co/nDm5fbG"><img src="https://i.ibb.co/Cn8Tvzc/Screenshot-2024-12-19-205450.png" alt="Screenshot-2024-12-19-205450" border="0"></a><br>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/QcXRSbP/Screenshot-2024-12-19-205459.png" alt="Screenshot-2024-12-19-205459" border="0"></a><br>
 <br>
-Updating User Information
+>Updating User Information
 ***
 <a href="https://ibb.co/gV0Lsfr"><img src="https://i.ibb.co/8cyLFfm/Screenshot-2024-12-19-205506.png" alt="Screenshot-2024-12-19-205506" border="0">
