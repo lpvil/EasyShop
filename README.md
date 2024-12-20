@@ -35,4 +35,17 @@ Home Screen
 <br>
 >Updating User Information
 ***
-<a href="https://ibb.co/gV0Lsfr"><img src="https://i.ibb.co/8cyLFfm/Screenshot-2024-12-19-205506.png" alt="Screenshot-2024-12-19-205506" border="0">
+<a href="https://ibb.co/gV0Lsfr"><img src="https://i.ibb.co/8cyLFfm/Screenshot-2024-12-19-205506.png" alt="Screenshot-2024-12-19-205506" border="0"><br>
+
+'
+ public Profile getById(Principal principal) {
+        User user = userDao.getByUserName(principal.getName());
+
+        var profile = profileDao.getByUserId(user.getId());
+
+        if (profile == null) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
+        return profile;
+
+'
